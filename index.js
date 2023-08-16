@@ -39,8 +39,8 @@ app.post('/dts', (req, res) => {
   var mailOptions = {
     from: req.body.email,
     // "DTS <email>"
-    to: 'ezeiruchibuike@gmail.com',
-    // to: 'admin@dynamictotalservices.com.au',
+    // to: 'ezeiruchibuike@gmail.com',
+    to: 'admin@dynamictotalservices.com.au',
     subject: req.body.subject,
     html: `<div>${html.join(' ')}</div>`
   };
