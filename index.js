@@ -10,8 +10,8 @@ app.use(
     origin: [
       'http://127.0.0.1:5500',
       'http://localhost',
-      'dynamictotalservices.com.au',
-      'dynamic-total-services.onrender.com'
+      'https://dynamictotalservices.com.au',
+      'https://dynamic-total-services.onrender.com'
     ],
     credentials: true
   })
