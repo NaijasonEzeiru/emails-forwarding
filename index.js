@@ -10,6 +10,7 @@ app.use(
     origin: [
       'http://127.0.0.1:5500',
       'http://localhost',
+      'dynamictotalservices.com.au',
       'dynamic-total-services.onrender.com'
     ],
     credentials: true
@@ -38,8 +39,8 @@ app.post('/dts', (req, res) => {
   var mailOptions = {
     from: req.body.email,
     // "DTS <email>"
-    // to: 'ezeiruchibuike@gmail.com',
-    to: 'admin@dynamictotalservices.com.au',
+    to: 'ezeiruchibuike@gmail.com',
+    // to: 'admin@dynamictotalservices.com.au',
     subject: req.body.subject,
     html: `<div>${html.join(' ')}</div>`
   };
