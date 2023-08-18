@@ -48,11 +48,14 @@ app.post('/dts', (req, res) => {
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
+      return res
+        .status(500)
+        .json({ message: 'Email not submmitted. something went wrong' });
     } else {
       console.log(info.response);
+      return res.status(204).json({ message: 'Form submitted successfully' });
     }
   });
-  res.status(204);
 });
 app.listen(PORT, () => console.log('server running on port: ' + PORT));
 
