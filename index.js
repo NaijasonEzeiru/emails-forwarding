@@ -11,6 +11,7 @@ app.use(
       'http://127.0.0.1:5500',
       'http://localhost',
       'https://dynamictotalservices.com.au',
+      'https://www.dynamictotalservices.com.au',
       'https://dynamic-total-services.onrender.com'
     ],
     credentials: true
