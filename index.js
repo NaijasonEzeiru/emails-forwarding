@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 4000;
 app.use(
   cors({
     origin: [
-      'http://127.0.0.1:5500',
-      'http://localhost',
+      // 'http://127.0.0.1:5500',
+      // 'http://localhost',
       'https://dynamictotalservices.com.au',
       'https://www.dynamictotalservices.com.au',
       'https://dynamic-total-services.onrender.com'
@@ -35,7 +35,8 @@ app.post('/dts', (req, res) => {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
-    auth: { user: 'jayseehe1035@gmail.com', pass: 'sveboccesvoaxrep' }
+    // auth: { user: 'jayseehe1035@gmail.com', pass: 'sveboccesvoaxrep' }
+    auth: { user: 'dynamictotalservices@gmail.com', pass: 'ohsvevhirtbphqoe' }
   });
   var mailOptions = {
     from: req.body.email,
